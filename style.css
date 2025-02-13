@@ -1,14 +1,37 @@
-/*nav{
+body{
     background-color: #586F7C;
 }
-*/
+
+
+.textdecor{
+    text-decoration: none;
+    color: white;
+}
+
 .sideNav{
     background-color: #586F7C;
     color: white;
 
 }
 
+.bgcolor{
+    background-color: #B8D8D9;
+}
 
+.card{
+    border: none;
+    
+    
+}
+.cardbg{
+    background-color: #B8D8D9;
+    
+    
+}
+
+.textColor{
+    color: #B8D8D9;
+}
 
 
 
@@ -23,8 +46,33 @@
     margin-left:35px;
 }
 
+.accordion-body{
+    background-color:#586F7C;
+    color:white;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #c8e1e1 !important;
+    color: white !important; /* Change text color to white for better contrast */
+  }
+
+.map{
+    background-color: gray;
+    height:10rem;
+}
+
 .galCardStyle{
     border-radius: 18px;
     background: #D9D9D9;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+footer {
+    background: #5a6871;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #bbb;
+    position: relative;
+    bottom: 0;
+    text-align: center;
 }
