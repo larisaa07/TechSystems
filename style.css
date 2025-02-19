@@ -1,9 +1,21 @@
 body{
-    background-color: rgb(199, 199, 199);
+    background-color: #586F7C;
+    
 }
 
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+    }
+    ::-webkit-scrollbar-track-piece  {
+    background-color: #5a6871;
+    }
+    ::-webkit-scrollbar-thumb:vertical {
+    height: 30px;
+    background-color: #B8D8D9;
+    }
+
 .container{
-    background-color: #586F7C;
     padding:30px;
 }
 
