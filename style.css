@@ -80,8 +80,7 @@ body{
   }
 
 .map{
-    background-color: gray;
-    height:10rem;
+    height:100vh;
     margin-bottom: 50px;
 }
 
@@ -163,4 +162,94 @@ hr{
     list-style-type: none; /* Removes the bullets */
     padding: 0;            /* Removes any padding */
     margin: 0;    
+}
+
+
+.area {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+/* Background image container */
+.mapimg {
+    background-image: url("imgs/IMG_7421.jpg");
+    background-size: contain; /* Ensures the whole image is visible */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    width: 80%; /* Adjust width to match aspect ratio */
+    position: relative; /* Enables absolute positioning for child elements */
+}
+
+/* Circles */
+.circle1, .circle2, .circle3, .circle4 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #6FE9E3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Now positioned relative to .mapimg */
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* Position circles relative to the image using accurate percentages */
+.circle1 {
+    top: 49%;  /* Adjusted position */
+    left: 20%;
+}
+
+.circle2 {
+    top: 48%;  
+    left: 55%;
+}
+
+.circle3 {
+    top: 49%;  
+    left: 65%;
+}
+
+.circle4 { 
+    top: 48%;  
+    left: 75%;
+}
+
+/* Glow Effect */
+.glow-effect, .glow-effect2, .glow-effect3, .glow-effect4 {
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.glow-effect:hover, 
+.glow-effect2:hover, 
+.glow-effect3:hover,
+.glow-effect4:hover { 
+    color: #6FE9E3; 
+    box-shadow: 
+        0 0 5px rgba(110, 233, 227, 0.7),
+        0 0 10px rgba(110, 233, 227, 0.7),
+        0 0 15px rgba(110, 233, 227, 0.7),
+        0 0 20px rgba(110, 233, 227, 0.7);
+}
+
+/* Tooltip Text */
+.text-overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.2s ease-in-out;
 }

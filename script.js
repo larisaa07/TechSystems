@@ -1,3 +1,18 @@
+  //map stuff
+  $(document).ready(function() {
+    $(".text-overlay").hide();
+  
+    $(".circle1, .circle2, .circle3, .circle4").hover(
+        function() {
+            $(this).find(".text-overlay").stop(true, true).slideDown(300);
+        },
+        function() {
+            $(this).find(".text-overlay").stop(true, true).slideUp(300);
+        }
+    );
+  });
+  
+
 const vue_app = Vue.createApp({
     created() {
       // Fetch the images.json file and update the 'images' array
@@ -16,3 +31,5 @@ const vue_app = Vue.createApp({
   });
   
   vue_app.mount("#vue_app");
+
+
