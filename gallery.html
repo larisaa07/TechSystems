@@ -108,7 +108,7 @@
     <div class="row justify-content-center">
       <!-- Loop through images -->
       <div
-        class="col-sm-4 col-md-3 mt-5 text-center ms-3 me-3"
+        class="col-sm-5 col-md-4 mt-5 text-center ms-3 me-3"
         v-for="(image, index) in images"
         :key="image.id"
       >
@@ -116,7 +116,7 @@
           <div class="card1-inner">
             <div class="card1-front">
               <!-- Make the image responsive and fit inside the div -->
-              <img :src="image.image_url" alt="image.studentName" class="img-fluid card-img">
+              <img :src="image.image_url" :alt="image.project" class="img-fluid  card-img">
             </div>
             <div class="card1-back">
               
@@ -139,18 +139,18 @@
     <h1>Student Testimonials</h1>
   </div>
 
-  <div class="row justify-content-center testimonials">
+  <div class="row justify-content-center m-3 text-center testimonials">
     <!-- Third row -->
-    <div class="col-sm-4 col-md-3 mt-5  ms-3 me-3">
+    <div class="col-sm-4 col-md-3 mt-5  ms-3 me-3 border rounded p-4">
       Tech Systems with Ms. Russo was the perfect introduction to the world of technology. The hands-on projects helped me understand basic coding, engineering, and problem-solving in a fun way.
     </div>
-    <div class="col-sm-4 col-md-3 mt-5 ms-3 me-3">
+    <div class="col-sm-4 col-md-3 mt-5 ms-3 me-3 border rounded p-4">
       Before taking this class, I had no experience with tech, but Ms. Russo made everything easy to learn. The projects were engaging and showed me how technology connects to real life.
     </div>
-    <div class="col-sm-4 col-md-3 mt-5 ms-3 me-3">
+    <div class="col-sm-4 col-md-3 mt-5 ms-3 me-3 border rounded p-4">
       Tech Systems gave me a strong foundation in technology without feeling overwhelming. Ms. Russo’s project-based approach made learning interactive and exciting. It helped me realize that I want to pursue a future in computer science!
     </div>
-
+  </div>
 
     <footer class="mt-5">
       <p>&copy; 2025 Tech Systems Class. All rights reserved.</p>
