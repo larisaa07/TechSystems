@@ -101,6 +101,8 @@
 
     <div class="container">
 
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
       <div class="row text-center mb-5">
         <h1 class ="heading">Tech Systems</h1>
       </div>
@@ -151,6 +153,8 @@ Before teaching at Marlboro, I attended Howell High School and then studied Tech
       <div class="row mt-5 " id ="crsInfo">
         <h2 class="clsinfo">Class Info & Resources</h2>
       </div>
+
+      <div class="size">
       <!--dropdowns-->
       <div class=" m-3 accordion mb-5" id="accordionExample">
         <div class="accordion-item ">
@@ -192,6 +196,7 @@ Before teaching at Marlboro, I attended Howell High School and then studied Tech
           </div>
         </div>
       </div>
+    </div>
       <!--dropdowns end-->
 
       <!--end of class info and resources section-->
@@ -330,6 +335,28 @@ Before teaching at Marlboro, I attended Howell High School and then studied Tech
       <p>&copy; 2025 Tech Systems Class. All rights reserved.</p>
   </footer>
     <!-- Bootstrap JavaScript Libraries -->
+
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
