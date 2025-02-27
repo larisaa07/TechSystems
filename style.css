@@ -404,8 +404,9 @@ font-style: normal;
         background-color:#B8D8D9;
     }
 
-.size{
+.marg{
     height:100vh;
+    margin-top:10rem;
 }
 
 #myBtn {
